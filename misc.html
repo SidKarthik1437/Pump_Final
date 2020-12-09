@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>PRAJASEVE</title>
+  </head>
+
+  <body>
+    <div className="Landing">
+      
+        <div className="title_container">
+          <Titlecard lang={lang} engtitle ="Water Pump Selection" kantitle="ನೀರಿನ ಪಂಪ್ ಆಯ್ಕೆ" />
+        </div>
+  
+        <Categoryheader engtitle="For Domestic and Community" kantitle="ಗೃಹ ಮತ್ತು ವಸತಿ ನಿಲಯಕ್ಕೆ"/>
+  
+        <div className="grid_container">
+      
+            <div className="cc__container">
+                <div className="cc__image">
+                    <img src='https://images-na.ssl-images-amazon.com/images/I/31C9enlXjGL.jpg' alt="Imageeeee" />
+                </div>
+                <div className="cc__title">
+                    <h5></h5>
+                </div> 
+            </div>
+            <Categorycard path="dcwell" lang={lang} engtitle="BoreWell" kantitle="ಕೊಳವೆ ಭಾವಿ" imgURL="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcT5lT4VXuvOoGw8Mfrz3wph8Eg-gmtR3WwYz6LQeIE23yJAPjRYhekKJsT8pjwtGO8cVavf4tK4bocxH5O1S6NG0CNLK5i_1w&usqp=CAE"/>
+        </div>
+                
+        <Categoryheader engtitle="For Agriculture" kantitle="ವ್ಯವಸಾಯಕ್ಕೆ"/>
+  
+        <div className="grid_container">
+  
+            <Categorycard lang={lang} engtitle="Open Well" kantitle="ತೆರೆದ ಭಾವಿ" imgURL="https://api.ushapumps.com/sites/default/files/2019-04/agricultural-pumps-home-page-min.png"/>
+  
+          <Route exact={true} strict path="/agribore" component={agribore} />
+          <NavLink to="/agribore">
+            <Categorycard lang={lang} engtitle="Bore Well" kantitle="ಕೊಳವೆ ಭಾವಿ" imgURL="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-K6rvujFF04USd0yvFQ1FYP5geluvCrPaQg&usqp=CAU"/>
+          </NavLink>
+  
+          <Route exact={true} strict path="/acorp" component={acorp} />
+          <NavLink to="/acorp">
+            <Categorycard lang={lang} engtitle="Canal or River" kantitle="ಕಾಲುವೆ ಅಥವಾ ನದಿ" imgURL="https://image.made-in-china.com/202f0j00BfYUgmdMnqzv/Heavy-Duty-High-Chrome-Silt-Dredge-Pump-for-Port-Canal.jpg"/>
+          </NavLink>
+  
+            <Categorycard lang={lang} engtitle="Lift Irrigation" kantitle="ಏತ್ ನೀರಾವರಿ" imgURL="https://miamipumpandsupply.com/wp-content/uploads/irrigation-pump.jpg"/>
+  
+            <Categorycard lang={lang} engtitle="Solar Pumps" kantitle="ಸೌರಶಕ್ತಿ ಪಂಪುಗಳು" imgURL="https://image.made-in-china.com/202f0j00DdZQCKwPZTuU/Solar-Pump-Kit-Solar-Submersible-Irrigation-Pumps-S243T-20-.jpg"/>
+  
+        </div>
+  
+        <Categoryheader engtitle="For Industry" kantitle="ಕೈಗಾರಿಕೆಗೆ"/>
+  
+        <div className="grid_container">
+          <Categorycard lang={lang} engtitle="Polder" kantitle="ತೊಟ್ಟಿ ಮತ್ತು ತೆರೆದ ಭಾವಿ" imgURL="https://4.imimg.com/data4/EV/KU/MY-26270958/polder-pump-500x500.jpg"/>
+          <Categorycard lang={lang} engtitle="Special Purpose Pumps" kantitle="ವಿಶೇಷ ಉದ್ದೇಶದ ಪಂಪುಗಳು" imgURL="https://5.imimg.com/data5/TT/GN/PL/SELLER-1917720/wc-18-doctor-special-purpose-pumps-500x500.jpg"/>
+        </div>
+        
+  </body>
+  <script>
+    $('[lang="ka"]').hide();
+
+    $(document).ready(function () {
+      $("#switch-lang").click(myFunction);
+    });
+
+    function myFunction() {
+      $('[lang="ka"]').toggle();
+      $('[lang="en"]').toggle();
+    }
+  </script>
+</html>
+}
