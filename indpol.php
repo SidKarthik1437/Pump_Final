@@ -19,6 +19,8 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -28,6 +30,24 @@
   </head>
 
   <body>
+    <!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+     
+    </div>
+  </div>
+</div>
+<!-- modal ends -->
     <div class="productmain">
       <div class="mainheading">
         <div class="headermenu">
@@ -39,7 +59,10 @@
           <span lang="ka">ಕೈಗಾರಿಕೆ ಹೊಂಡ ಅಥವಾ ಕೊಳದ ಪಂಪ್ ಆಯ್ಕೆ</span>
         </h5>
       </div>
-
+      <div class="help">    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+ Help
+</button></div>
       <div class="container">
         <form action="/indpol.php">
           <div class="card">
@@ -56,7 +79,7 @@
               </div>
             </div>
 
-            <div class="forminput" style="border-bottom:none !important;"></div>
+            <div class="forminput" style="border-bottom:none !important;">
               <h5 lang="ka">ಎಶ್ಟು ಎತ್ತರಕ್ಕೆ ನೀರನ್ನು ಪಂಪ್ ಮಾಡಬೇಕು</h5>
               <h5 lang="en">Height to be pumped</h5>
               &emsp;
@@ -68,8 +91,11 @@
                 </h6>
               </div>
             </div>
+            </div>
+            <div class="card">
 
-            <div class="formwaterpump">
+            
+            <div class="formwaterpump" style="border-top:none !important;margin-top:0 !important;padding-top:0 !important;">
               <h5 lang="ka">ಒಟ್ಟು ಎಷ್ಟು ಎತ್ತರಕ್ಕೆ ನೀರನ್ನು ಎತ್ತಬೇಕು ಮೀಟರ್ಗಳಲ್ಲಿ</h5>
               <h5 lang="en">Which Make Pump Required</h5>
               &emsp;
@@ -79,7 +105,7 @@
               </select>
             </div>
           </div>
-
+        </div>
           <div class="buttons">
             <button type="button" lang="en" class="btn btn-light" id="clearbtn">
               CLEAR

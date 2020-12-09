@@ -49,7 +49,7 @@
 
       <div class="container">
         <form action="/agrisol.php">
-        <H1>IN DEVELOPTMENT..</H1>
+        <H1>IN DEVELOPMENT..</H1>
           <!-- <div class="forminput">
                     <h5>ನೀರಿನ ಅವಶ್ಯಕತೆ ದಿನಕ್ಕೆ ಲೀಟರ್ಗಳಲ್ಲಿ </h5>
 <h5>Water to be Pumped per Minute (in litres) </h5> &emsp;

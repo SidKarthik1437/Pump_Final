@@ -138,12 +138,12 @@
               ತೊಟ್ಟಿ ಅಥವಾ ಹೊಂಡದ (ಕೊಳ)
               <img class="card__right"src="https://4.imimg.com/data4/EV/KU/MY-26270958/polder-pump-500x500.jpg" />
             </a>
-            <a href="#" class="list-group-item" lang="en">
+            <a href="agrisol.php" class="list-group-item" lang="en">
               <img class="card__left"src="https://5.imimg.com/data5/TT/GN/PL/SELLER-1917720/wc-18-doctor-special-purpose-pumps-500x500.jpg" />
               Special Purpose Pumps
               <img class="card__right"src="https://5.imimg.com/data5/TT/GN/PL/SELLER-1917720/wc-18-doctor-special-purpose-pumps-500x500.jpg" />
             </a>
-            <a href="#" class="list-group-item" lang="ka">
+            <a href="agrisol.php" class="list-group-item" lang="ka">
               <img class="card__left"src="https://5.imimg.com/data5/TT/GN/PL/SELLER-1917720/wc-18-doctor-special-purpose-pumps-500x500.jpg" />
               ವಿಶೇಷ ಉದ್ದೇಶದ ಪಂಪುಗಳು
               <img class="card__right"src="https://5.imimg.com/data5/TT/GN/PL/SELLER-1917720/wc-18-doctor-special-purpose-pumps-500x500.jpg" />

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="pages.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>PRAJASEVE</title>
+  </head>
+
+  <body>
+    <div class="productmain">
+            <div class="company_details">
+                <div class="company_name">
+                    <h3> <strong>PRAJASEVE</strong></h3>
+                </div>
+                <div class="company_address">
+                    CHUNCHGHATTA, KONANAKUNTE POST, BANGALORE-560062.
+                    <br>
+                    TELEPHONE : XXXXXXXXXXX MOBILE : XXXXXXXXX
+                </div>
+            </div>
+        </div>
+        <br>
+      
+        <div class="mainheading">
+            <h4 class="heading"><strong>Pump Selection Report</strong></h4>
+        </div>
+        <hr>
+
+        <div class="container">
+            <div class="card">
+                <div class="custid">
+                    <span>Customer ID : </span><span>XXXX</span>
+                </div>
+                <div class="miscinfo">
+                    <div class="date">
+                        <span>DATE: </span><span>xx-xx-xxxx</span>
+                    </div>
+                    <div class="time">
+                        <span>IST: </span><span>xx:xx:xx</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="address_info">
+                    <h4>CUSTOMER ADDRESS</h4>
+                    <textarea rows="4" cols="40" disabled>At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.</textarea>
+                </div>
+                <hr>
+            </div>
+            <div class="card">
+                <div class="address_info">
+                    <h4 class="heading">DEALER ADDRESS</h4>
+                    <textarea rows="4" cols="40" disabled>At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.</textarea>
+                </div>
+                <hr>
+            </div>
+            <div class="card">
+                <div class="address_info">
+                    <h4 class="heading">MANUFACTURER ADDRESS</h4>
+                    <textarea rows="4" cols="40" disabled>At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.</textarea>
+                </div>
+                <hr>
+            </div>
+            <div class="card">
+                <div class="given_data">
+                    <h4 class="heading">Customer given data</h4>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="card">
+                <div class="result">
+                    <h4 class="heading">Result</h4>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="card">
+                <div class="suggestions">
+                    <h4 class="heading">Manufacturer's suggestions</h4>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="card">
+                <div class="suggestions">
+                    <h4 class="heading">Our suggestions</h4>
+                    <br>
+                    <br>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button type="button" class="btn btn-light" id="backbtn">
+                  BACK
+                </button>
+                <button type="submit" class="btn btn-light" id="printbtn">
+                  PRINT
+                </button>
+                <button type="submit" class="btn btn-light" id="paymentbtn">
+                  PAYMENT
+                </button>
+            </div>
+
+      </div>
+    </div>
+  </body>
+  <script>
+    $('[lang="ka"]').hide();
+
+    $(document).ready(function () {
+      $("#switch-lang").click(myFunction);
+    });
+
+    function myFunction() {
+      $('[lang="ka"]').toggle();
+      $('[lang="en"]').toggle();
+    }
+  </script>
+</html>

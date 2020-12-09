@@ -47,24 +47,70 @@ body
     overflow: scroll !important;
 }
 
+.help>button
+{
+    background-color:transparent;
+    border: none;
+        padding: 0; 
+       color: black;
+       text-decoration: underline;
+       /* margin: 0; */
+       float: right !important;
+       margin-right: 20px;
+       margin-bottom: 5px;
+       font-size: 18px;
+}
+.modal{
+    margin-top: 40% !important;
+}
 .productmain {
     width: 100%;
-    position: fixed;
+   
     height: 100%; 
     background-repeat: no-repeat;
     justify-content: center;
  }
 
+.company_name
+ {
+    color: white;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+
+.company_name > h5
+{
+    font-weight: 700;
+    
+}
+
+.company_address
+{
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .mainheading {
     height: 17%;
     padding: 5px;
-    background-color: #1DA1F2;
+    /* background-color: #1DA1F2; */
     color: rgb(231, 229, 229);
-   
     text-align: center;
-    
-    
+    justify-content: center;
+}
 
+.mainheading>h4 {
+    line-height: 23px !important;
+}
+
+.report > h4
+{
+    justify-content:center;
+    color: black;
+    /* padding-top: 5px !important; */
+    /* padding-bottom: 10px; */
 }
 .headermenu
 {
@@ -77,10 +123,8 @@ body
     margin: 5px 10px 0 10px;
     font-size:20px; 
     text-decoration: none;
-    
-    
-
 }
+
 
 /* Ripple effect */
 .ripple {
@@ -90,28 +134,54 @@ body
     padding: 10px;
     color: whitesmoke;
   }
-  .ripple:hover {
+.ripple:hover {
     background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
   }
-  .ripple:active {
+.ripple:active {
     background-color: #6eb9f7;
     background-size: 100%;
     transition: background 0s;
   }
 .container
 {
-    display: flex;
+    /* display: flex;
+    flex-direction: column; */
     justify-content: space-between;
     padding: 0px;
     position: relative;
     height: 100%;
     width: 97%;
     /* margin-left: 1.5%; */
-    
 }
 
-.mainheading>h4 {
-    line-height: 23px !important;
+.custid
+{
+    color: black;
+    padding: 10px;
+    font-weight: 500;
+}
+
+.miscinfo
+{
+    color: black;
+    padding: 10px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+}
+
+.address_info
+{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.heading
+{
+    font-weight: 600 !important;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .category_heading {
@@ -119,7 +189,6 @@ body
 }
 .langbutton>span
 {
-    /* font-size: 20px; */
     font-weight: 500;
 }
 .category_heading>h5 {
@@ -142,7 +211,6 @@ body
     border-radius: 10px;
     padding-bottom: 0;
     margin-bottom: 20px;
-
 }
 
 .list-group
@@ -304,6 +372,24 @@ input[type="number"]::placeholder {
     color: black !important;
 
 }
+#backbtn
+{
+    background-color: red !important;
+    color: white !important;
+
+}
+#printbtn
+{
+    background-color: #e9e9e9 !important;
+    color: blue !important;
+
+}
+#paymentbtn
+{
+    background-color: blue !important;
+    color: white !important;
+
+}
 
 .fullname_input
 {
@@ -330,8 +416,10 @@ input[type="number"]::placeholder {
 {
     background-color: grey;
     color: white;
-    padding: 8.5px;
-    border: 1px solid white;
+    padding: 8px;
+    padding-top: 8.4px;
+    padding-bottom: 8.5px;
+    border: 0px solid white;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }

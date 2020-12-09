@@ -29,6 +29,24 @@
   </head>
 
   <body>
+    <!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+     
+    </div>
+  </div>
+</div>
+<!-- modal ends -->
     <div class="productmain">
       <div class="mainheading">
       <div class="headermenu">
@@ -40,7 +58,10 @@
           <span lang="ka">ಗೃಹ ಮತ್ತು ವಸತಿ ನಿಲಯಕ್ಕೆ ತೊಟ್ಟಿ / ತೆರೆದ ಭಾವಿ ಪಂಪಿನ ಆಯ್ಕೆ</span>
         </h5>
       </div>
-
+      <div class="help">    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+ Help
+</button></div>
       <div class="container">
         <form action="/acorrp.php">
           <div class="card">

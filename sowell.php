@@ -29,6 +29,26 @@
   </head>
 
   <body>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+     
+    </div>
+  </div>
+</div>
+<!-- modal ends -->
     <!-- Done by Tejas on 26th Nov -->
     <div class="productmain">
       <div class="mainheading">
@@ -42,9 +62,15 @@
           </h5>
       </div>
 
-      <div class="container">
-        <form action="/soborewell.php">
+      <div class="help">    <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+        Help
+        </button>
+      </div>
 
+      <div class="container">
+        <form action="/custaddinp.php">
+            
           <div class="card">
             <div class="forminput">
               <h5 lang="ka">ನೀರಿನ ಅವಶ್ಯಕತೆ ದಿನಕ್ಕೆ ಲೀಟರ್ಗಳಲ್ಲಿ</h5>
